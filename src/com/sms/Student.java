@@ -20,6 +20,49 @@ public class Student {
         this.id=id;
         this.name=name;
         this.grade=grade;
-        
+        feesPaid=0;
+        feesTotal=30000;
+    }
+
+    //------------------------------------------------
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public int getFeesPaid() {
+        return feesPaid;
+    }
+
+    public int getFeesTotal() {
+        return feesTotal;
+    }
+
+    //-------------------------------------------------
+
+
+
+    /**
+     * use to update student's grade
+     * @param grade new grade of the student
+     */
+    public void setGrade(int grade){
+        this.grade=grade;
+    }
+
+    /**
+     *keep adding the fees to feesPaid field.
+     * @param fees the fees that the student pays.
+     */
+    public void updateFeesPaid(int fees){
+        feesPaid+=fees;
     }
 }
