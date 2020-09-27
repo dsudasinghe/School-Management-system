@@ -83,6 +83,3 @@ public class Student {
         this.feesTotal = feesTotal;
     }
 }
-
-
-
