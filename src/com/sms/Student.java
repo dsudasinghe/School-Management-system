@@ -65,4 +65,24 @@ public class Student {
     public void updateFeesPaid(int fees){
         feesPaid+=fees;
     }
+
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setFeesPaid(int feesPaid) {
+        this.feesPaid = feesPaid;
+    }
+
+    public void setFeesTotal(int feesTotal) {
+        this.feesTotal = feesTotal;
+    }
 }
+
+
+
