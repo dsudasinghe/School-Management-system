@@ -6,8 +6,8 @@ import java.util.List;
 public class School {
     private List<Teacher> teachers;
     private List<Student> students;
-    private int totalMoneyEarned;
-    private int totalMoneySpent;
+    private static int totalMoneyEarned;
+    private static int totalMoneySpent;
 
 
 
@@ -31,7 +31,7 @@ public class School {
         return totalMoneyEarned;
     }
 
-    public void updateMoneyEarned(int moneyEarned) {
+    public static void updateMoneyEarned(int moneyEarned) {
         totalMoneyEarned += moneyEarned;
     }
 
@@ -39,7 +39,7 @@ public class School {
         return totalMoneySpent;
     }
 
-    public void updateMoneySpent(int moneySpent) {
+    public static void updateMoneySpent(int moneySpent) {
         totalMoneyEarned-= moneySpent;
     }
 
@@ -50,5 +50,13 @@ public class School {
 
     public void addStudents(Student student) {
         students.add(student);
+    }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "teachers=" + teachers +
+                ", students=" + students +
+                '}';
     }
 }
